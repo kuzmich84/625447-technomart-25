@@ -4,6 +4,11 @@ q{
 h2 {
   text-transform: uppercase;
 }
+fieldset {
+  border:0 none;
+  margin-left: 0;
+  padding-left:0;
+}
 .visuallyhidden:not(:focus):not(:active) {
   position: absolute;
   width: 1px;
@@ -36,3 +41,4 @@ nav a{
 .goods_card {
   list-style-type:none;
 }
+
