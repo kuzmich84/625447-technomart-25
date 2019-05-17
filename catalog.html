@@ -59,7 +59,8 @@
       <p>ЦЕНА:</p>
       <div id="slider-range"></div>
       <form class="sidebar_brand_selection">
-        <p>ПРОИЗВОДИТЕЛИ:</p>
+        <fieldset>
+          <legend>ПРОИЗВОДИТЕЛИ:</legend>
         <input type="checkbox" name="bosh" id="bosh"/>
         <label for="bosh">BOSH</label><br>
         <input type="checkbox" name="interskol" id="interskol"/>
@@ -70,14 +71,17 @@
         <label for="bosh">DEWALT</label><br>
         <input type="checkbox" name="hitachi" id="hitachi"/>
         <label for="bosh">HITACHI</label>
+        </fieldset>
       </form>
 
       <form class="sidebar_goods_feature">
-        <p>ПИТАНИЕ:</p>
+        <fieldset>
+        <legend>ПИТАНИЕ:</legend>
         <input type="radio" name="electric" id="battery"   />
         <label for="battery">АККУМУЛЯТОРНЫЕ</label> <br>
         <input type="radio" name="electric" id="electric"  />
         <label for="electric">СЕТЕВЫЕ</label>
+        </fieldset>
       </form>
       <button class="sidebar_btn">Показать</button>
     </div>
