@@ -1,0 +1,49 @@
+q{
+  quotes: "\00ab" "\00bb";
+}
+h2 {
+  text-transform: uppercase;
+}
+fieldset {
+  border:0 none;
+  margin-left: 0;
+  padding-left:0;
+}
+.visuallyhidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+nav a{
+  text-transform: capitalize;
+}
+
+.container h3{
+  text-transform: uppercase;
+}
+ .goods_old_price {
+  text-decoration: line-through;
+}
+.main_footer ul li a{
+  text-transform: capitalize;
+}
+.footer_logo_title{
+  text-transform: uppercase;
+}
+.goods_card {
+  list-style-type:none;
+}
+
+.goods_btn{
+  display:none;
+}
+
+
