@@ -2,14 +2,17 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
   <title>Техномарт</title>
 </head>
 <body>
 <header class="header">
   <div class="top_header">
     <a class="top_header_logo" href="index.html">
-      <span class="header_logo_title">ТЕХНОМАРТ</span>
+      <span><img src="img/svg/logo-technomart.svg" width="109" height="19" alt="Техномарт"></span>
     </a>
     <form class="top_header_search" action="#" method="get">
       <input type="text" name="search" placeholder="Поиск:" >
@@ -19,7 +22,7 @@
     <a class="top_header_cart_btn"  href="checkout.html">Оформить заказ</a>
   </div>
   <div class="main_header">
-    <h1 class="main_header_headline">Интернет_магазин <br>
+    <h1 class="main_header_headline">Интернет-магазин <br>
       строительных материалов <br>
       и инструментов для ремонта</h1>
     <div class="main_header_info">
@@ -84,6 +87,33 @@
     <p><a href="" class="contacts_btn">ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ!</a></p>
   </div>
   </section>
+
+  <div class="write-us_popup">
+    <img class="write-us_popup_close_img" src="img/svg/icon-close.svg" alt="Закрыть" align="right">
+
+    <div class="write-us_popup_form">
+  <form action="#" method="post">
+    <div class="write-us_popup_input">
+      <label for="name">Ваше имя:</label>
+      <input type="text" placeholder="Имя Фамилия" id="name">
+    </div>
+    <div class="write-us_popup_input indent">
+      <label for="email">Ваш e-mail:</label>
+      <input type="text" placeholder="email@example.com" id="email">
+    </div>
+    <label for="massage">Текст письма:</label>
+    <textarea type="textarea" id="massage" placeholder="В свободной форме" rows="6" ></textarea>
+  </form>
+    </div>
+    <div class="write-us_popup_btn">
+      <input type="submit" value="ОТПРАВИТЬ">
+      </div>
+  </div>
+
+  <div class="map_popup">
+    <img  src="img/content/map_popup.jpg" alt="Большая карта" width="940" height="446">
+    <img class="map_popup_close_img" src="img/svg/icon-close.svg" alt="Закрыть" align="right">
+  </div>
 
 </main>
 <footer class="main_footer">
