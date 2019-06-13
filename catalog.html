@@ -74,16 +74,7 @@
     <li>ПЕРФОРАТОРЫ</li>
   </ul>
 
-  <div class="cart_popup">
-    <img class="cart_popup_close_img" src="img/svg/icon-close.svg" alt="Закрыть" align="right">
-    <div class="cart_popup_content">
-      <p> <img class="cart_popup_mark_img" src="img/svg/icon-mark.svg" alt="Иконка галочки в cart-popup" width="66" height="66" align="middle">   Товар добавлен в корзину!</p>
-    </div>
-    <div class="cart_popup_btn">
-      <a class="checkout_btn" href="#">оформить заказ</a>
-      <a class="continue_btn" href="#">продолжить покупки</a>
-    </div>
-  </div>
+
   <h2 class="catalog_title" >ПЕРФОРАТОРЫ</h2>
   <div class="catalog_columns">
 
@@ -134,9 +125,10 @@
     <ul class="catalog_goods_list">
 
     <li class="goods_card">
-<!--      <img src="img/content/new-flag.png" alt="Новинка" class="goods_new_flag" width="60" height="59" hidden>-->
+
       <div class="goods_card_content">
       <div class="goods_img">
+        <span class="overlay_new"></span>
       <img src="img/content/perforator-2.jpg" alt="Перфоратор BOSCH BFG 3000" class="goods_card_img" width="218" height="170">
         <div class="goods_buttons">
       <a href="#" class="goods_btn_cart">КУПИТЬ</a>
@@ -153,7 +145,7 @@
 
     <li class="goods_card">
       <div class="goods_card_content">
-      <img src="img/content/new-flag.png" alt="Новинка" class="goods_new_flag" width="60" height="59" hidden>
+        <span class="overlay_new"></span>
       <div class="goods_img">
       <img src="img/content/perforator-3.jpg" alt="Перфоратор BOSCH BFG 6000" class="goods_card_img" width="218" height="170">
         <div class="goods_buttons">
@@ -174,7 +166,7 @@
 
       <div class="goods_img">
         <img src="img/content/perforator-4.jpg" alt="Перфоратор BOSCH BFG 2000" class="goods_card_img" width="218" height="170">
-        <img class="overlay_new" src="img/content/new-flag.png" alt="Новинка" class="goods_new_flag" width="60" height="60">
+        <span class="overlay_new"></span>
         <div class="goods_buttons">
           <a href="#" class="goods_btn_cart">КУПИТЬ</a>
           <a href="#" class="goods_btn_bookmark">В ЗАКЛАДКИ</a>
@@ -358,7 +350,19 @@
   </div>
 
 </footer>
+<div class="cart_popup">
+  <button  class="popup_close" type="button">Закрыть</button>
+  <div class="cart_popup_content">
+    <p>Товар добавлен в корзину!</p>
+    <span class="cart_popup_mark_img"></span>
+  </div>
+  <div class="cart_popup_btn">
+    <a class="checkout_btn btn" href="#">оформить заказ</a>
+    <button class="continue_btn" type="button" value="continue">продолжить покупки</button>
+  </div>
+</div>
 
-<script src="js/script.js"></script>
+
+<script src="js/cart_popup.js"></script>
 </body>
 </html>

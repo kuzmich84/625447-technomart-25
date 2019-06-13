@@ -90,45 +90,20 @@
       <li class="about_item">Автотрейдинг</li>
       <li class="about_item">ЖелДорЭкспедиция</li>
     </ul>
-    <a class="btn" href="about.html">ПОДРОБНЕЕ О КОМПАНИИ</a>
+    <a class="btn block" href="about.html">ПОДРОБНЕЕ О КОМПАНИИ</a>
   </section>
 
     <section class="contacts">
     <h3>контакты</h3>
     <p>Вы можете забрать товар сами,<br>
       заехав в наш офис:</p>
-      <img src="img/content/map_small.jpg" alt="Большая Конюшенная ул.,19" class="map" width="300" height="158">
-    <a href="#" class="btn">ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ!</a>
+      <a class="open_map" href="#"><img src="img/content/map_small.jpg" alt="Большая Конюшенная ул.,19" class="map" width="300" height="158"></a>
+    <a id="write_us" href="#" class="btn block">ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ!</a>
     </section>
   </div>
 
 
-  <div class="write-us_popup">
-    <img class="write-us_popup_close_img" src="img/svg/icon-close.svg" alt="Закрыть" align="right">
 
-    <div class="write-us_popup_form">
-  <form action="#" method="post">
-    <div class="write-us_popup_input">
-      <label for="name">Ваше имя:</label>
-      <input type="text" placeholder="Имя Фамилия" id="name">
-    </div>
-    <div class="write-us_popup_input indent">
-      <label for="email">Ваш e-mail:</label>
-      <input type="text" placeholder="email@example.com" id="email">
-    </div>
-    <label for="massage">Текст письма:</label>
-    <textarea type="textarea" id="massage" placeholder="В свободной форме" rows="6" ></textarea>
-  </form>
-    </div>
-    <div class="write-us_popup_btn">
-      <input type="submit" value="ОТПРАВИТЬ">
-      </div>
-  </div>
-
-  <div class="map_popup">
-    <img  src="img/content/map_popup.jpg" alt="Большая карта" width="940" height="446">
-    <img class="map_popup_close_img" src="img/svg/icon-close.svg" alt="Закрыть" align="right">
-  </div>
 
 
 </main>
@@ -175,9 +150,36 @@
      </span>
     </div>
   </div>
-
 </footer>
 
-<script src="js/script.js"></script>
+<div class="write-us_popup">
+  <button  class="popup_close" type="button">Закрыть</button>
+  <div class="write-us_popup_form">
+    <form action="#" method="post">
+      <div class="write-us_popup_input">
+        <label for="name">Ваше имя:</label>
+        <input type="text" placeholder="Имя Фамилия" id="name">
+      </div>
+      <div class="write-us_popup_input indent">
+        <label for="email">Ваш e-mail:</label>
+        <input type="text" placeholder="email@example.com" id="email">
+      </div>
+      <label for="message">Текст письма:</label>
+      <textarea type="textarea" id="message" placeholder="В свободной форме" rows="5"></textarea>
+    </form>
+  </div>
+  <div class="write-us_popup_btn">
+    <input class="btn" type="submit" value="ОТПРАВИТЬ"/>
+  </div>
+</div>
+
+<div class="map_popup">
+  <h2 class="visuallyhidden">Как до нас добраться</h2>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002949!2d30.320858715984823!3d59.93871916905436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1560360471392!5m2!1sru!2sru" width="940" height="446" frameborder="0" style="border:0" allowfullscreen></iframe>
+  <button  class="popup_close" type="button">Закрыть</button>
+</div>
+
+<script src="js/write_us_popup.js"></script>
+<script src="js/map_popup.js"></script>
 </body>
 </html>
