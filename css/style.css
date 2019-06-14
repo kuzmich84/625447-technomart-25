@@ -73,6 +73,10 @@ nav a{
   box-shadow: 0px 20px 40px  rgba(0,0,0,0.75);
   border-top: 7px solid #ee3643;
   background-color: #fff;
+}
+
+.cart_popup_show{
+  display: block;
 
 }
 
@@ -608,7 +612,6 @@ top:9px;
 .main_header_login{
   display: flex;
   justify-content: space-between;
-  min-width: 280px;
   padding: 25px 0 0;
   margin: 0 0 0 auto;
 }
@@ -638,7 +641,6 @@ top:9px;
 .header_login_enter_btn{
   background-color: #fff;
   min-width: 96px;
-
   padding-left: 25px;
 }
 
@@ -1187,12 +1189,14 @@ padding: 0;
   color: #000000;
   text-transform: uppercase;
 }
-.catalog_filters label{
+.catalog_filters{
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 15px;
   line-height: 20px;
   color: #000000;
 }
+
+
 
 .filter_brand_selection input[type=submit] {
   width: 140px;
@@ -1205,6 +1209,8 @@ padding: 0;
   font-family: 'PT Sans',Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
+  cursor: pointer;
+
 }
 
 /* Карточки каталога*/
@@ -1406,7 +1412,7 @@ padding: 0;
 }
 
  .active {
-  width:275px;
+  width:244px;
    text-align: left;
 }
 
@@ -1419,11 +1425,18 @@ padding: 0;
    color:#000;
  }
 .icon_logout {
-  position: absolute;
-  top:14px;
-  left:245px;
+  background-color: #fff;
+  padding-right: 10px;
 }
 
+.icon_logout a:hover path{
+  fill: #32425c;
+}
+
+.icon_logout a:active path {
+  opacity: 0.3;
+
+}
 .icon_user{
   position: absolute;
   top:14px;
@@ -1431,7 +1444,7 @@ padding: 0;
 
 }
 .header_login_enter_btn .header_login_active a{
-  color: #32425c;
+  color: red;
   text-decoration: underline;
 }
 
@@ -1444,21 +1457,95 @@ padding: 0;
   opacity: 0.3;
 }
 
-.user_name::before{
-  content:"155rrrr5";
-  background: url(../img/svg/icon-user.svg) no-repeat center;
-  background-size: 20px 18px;
-  color: transparent;
-}
+
 .checkbox_goods,.radio_power {
   border:0 none;
-  margin-left: 0;
-  padding-left:0;
-  position: relative;
-}
-.checkbox_goods input[type="checkbox"], .radio_power  input[type="radio"] {
+  margin: 0;
+  padding:0;
+
 
 }
+
+.manufactured, .power{
+  border-top:1px solid #e5e5e5;
+  padding: 20px 0 10px 0;
+
+
+}
+.radio_power{
+  margin-bottom: 45px;
+
+}
+.checkbox_goods legend, .radio_power legend{
+  margin-bottom: 10px;
+}
+
+.brand_input, .power_input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+}
+
+
+.check_brand, .radio_power label {
+  display: block;
+  margin-left: 35px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.check_box {
+   position: absolute;
+   width: 27px;
+   height: 23px;
+   background-image: url(../img/svg/checkbox-off.svg);
+   margin-left: -35px;
+   background-repeat: no-repeat;
+   top:-2px;
+   left:0;
+ }
+
+.radio_box {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-image: url(../img/svg/radio-off.svg);
+  margin-left: -35px;
+  background-repeat: no-repeat;
+  top:-2px;
+  left:0;
+}
+
+.brand_input:checked + * .check_box {
+  background-image: url(../img/svg/checkbox-on.svg);
+  width: 27px;
+  height: 23px;
+}
+
+.power_input:checked + * .radio_box{
+  background-image: url(../img/svg/radio-on.svg);
+  width:25px;
+  height: 25px;
+}
+
+.brand_input:disabled + * .check_box +span{
+  opacity: 0.4;
+}
+
+.power_input:disabled + * .radio_box +span{
+  opacity: 0.4;
+}
+
+.brand_input:disabled + * .check_box{
+  opacity: 0.3;
+}
+
+.power_input:disabled + * .radio_box{
+  opacity: 0.3;
+}
+
 
 
 .continue_btn {
