@@ -84,7 +84,26 @@
     фильтр:
     </div>
     <p class="filter_price_title">ЦЕНА:</p>
-    <div id="slider-range"></div>
+    <div class="price_range">
+
+      <div  class="slider_range">
+        <div class="range_control">
+          <div class="range">
+
+          </div>
+          <div class="active_range"></div>
+        </div>
+        <div class="circle circle_left"></div>
+        <div class="circle circle_right"></div>
+      </div>
+      <label class="min_price">
+        <input name="price" type="text" value="0">
+      </label>
+      <span>&mdash;</span>
+      <label class="max_price">
+        <input name="price" type="text" value="30000">
+      </label>
+    </div>
     <form action="https://echo.htmlacademy.ru" method="get" class="filter_brand_selection">
       <div class="manufactured">
       <fieldset class="checkbox_goods">
@@ -142,11 +161,12 @@
     <div class="catalog_sorting">
       <div class="title_sorting"><span>сортировка:</span>  </div>
       <ul class="catalog_sorting_items">
-        <li class="sorting_item "><a href="#">по цене</a></li>
+        <li class="sorting_item sorting_item_active"><a href="#">по цене</a></li>
         <li class="sorting_item"><a href="#">по типу</a></li>
         <li class="sorting_item"><a href="#">по функционалу</a></li>
-        <li class="icon_dir up"></li>
-        <li class="icon_dir down"></li>
+        <li class="icon_dir_up_active icon_dir_up"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg>
+        </li>
+        <li class="icon_dir_down"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/></svg></li>
       </ul>
 
     </div>
@@ -157,7 +177,7 @@
       <div class="goods_card_content">
       <div class="goods_img">
         <span class="overlay_new"></span>
-      <img src="img/content/perforator-2.jpg" alt="Перфоратор BOSCH BFG 3000" class="goods_card_img" width="218" height="170">
+        <img src="img/content/perforator-2.jpg" alt="Перфоратор BOSCH BFG 3000" class="goods_card_img" width="218" height="170">
         <div class="goods_buttons">
       <a href="#" class="goods_btn_cart">КУПИТЬ</a>
       <a href="#" class="goods_btn_bookmark">В ЗАКЛАДКИ</a>
@@ -191,11 +211,10 @@
 
     <li class="goods_card">
       <div class="goods_card_content">
-
-      <div class="goods_img">
-        <img src="img/content/perforator-4.jpg" alt="Перфоратор BOSCH BFG 2000" class="goods_card_img" width="218" height="170">
-        <span class="overlay_new"></span>
-        <div class="goods_buttons">
+        <div class="goods_img">
+          <span class="overlay_new  overlay_new_show" ></span>
+            <img src="img/content/perforator-4.jpg" alt="Перфоратор BOSCH BFG 2000" class="goods_card_img" width="218" height="170">
+          <div class="goods_buttons">
           <a href="#" class="goods_btn_cart">КУПИТЬ</a>
           <a href="#" class="goods_btn_bookmark">В ЗАКЛАДКИ</a>
         </div>
@@ -211,8 +230,8 @@
 
     <li class="goods_card">
       <div class="goods_card_content">
-      <img src="img/content/new-flag.png" alt="Новинка" class="goods_new_flag" width="60" height="59" hidden>
         <div class="goods_img">
+          <span class="overlay_new"></span>
       <img src="img/content/perforator-2.jpg" alt="Перфоратор BOSCH BFG 3000" class="goods_card_img" width="218" height="170">
           <div class="goods_buttons">
             <a href="#" class="goods_btn_cart">КУПИТЬ</a>
@@ -229,11 +248,10 @@
 
     <li class="goods_card">
       <div class="goods_card_content">
-
-      <div class="goods_img">
+        <div class="goods_img">
+          <span class="overlay_new overlay_new_show"></span>
         <img src="img/content/perforator-3.jpg" alt="Перфоратор BOSCH BFG 6000" class="goods_card_img" width="218" height="170">
-        <img class="overlay_new" src="img/content/new-flag.png" alt="Новинка" class="goods_new_flag" width="60" height="60">
-        <div class="goods_buttons">
+          <div class="goods_buttons">
           <a href="#" class="goods_btn_cart">КУПИТЬ</a>
           <a href="#" class="goods_btn_bookmark">В ЗАКЛАДКИ</a>
         </div>
@@ -248,9 +266,9 @@
 
     <li class="goods_card">
       <div class="goods_card_content">
-      <img src="img/content/new-flag.png" alt="Новинка" class="goods_new_flag" width="60" height="59" hidden>
-      <div class="goods_img">
-      <img src="img/content/perforator-4.jpg" alt="Перфоратор BOSCH BFG 2000" class="goods_card_img" width="218" height="170">
+        <div class="goods_img">
+          <span class="overlay_new"></span>
+          <img src="img/content/perforator-4.jpg" alt="Перфоратор BOSCH BFG 2000" class="goods_card_img" width="218" height="170">
         <div class="goods_buttons">
           <a href="#" class="goods_btn_cart">КУПИТЬ</a>
           <a href="#" class="goods_btn_bookmark">В ЗАКЛАДКИ</a>
@@ -266,11 +284,10 @@
 
     <li class="goods_card">
       <div class="goods_card_content">
-
-      <div class="goods_img">
-        <img src="img/content/perforator-2.jpg" alt="Перфоратор BOSCH BFG 3000" class="goods_card_img" width="218" height="170">
-        <img class="overlay_new" src="img/content/new-flag.png" alt="Новинка" class="goods_new_flag" width="60" height="60">
-        <div class="goods_buttons">
+        <div class="goods_img">
+          <span class="overlay_new overlay_new_show"></span>
+          <img src="img/content/perforator-2.jpg" alt="Перфоратор BOSCH BFG 3000" class="goods_card_img" width="218" height="170">
+          <div class="goods_buttons">
           <a href="#" class="goods_btn_cart">КУПИТЬ</a>
           <a href="#" class="goods_btn_bookmark">В ЗАКЛАДКИ</a>
         </div>
@@ -285,9 +302,9 @@
 
     <li class="goods_card">
       <div class="goods_card_content">
-      <img src="img/content/new-flag.png" alt="Новинка" class="goods_new_flag" width="60" height="59" hidden>
-      <div class="goods_img">
-      <img src="img/content/perforator-3.jpg" alt="Перфоратор BOSCH BFG 6000" class="goods_card_img" width="218" height="170">
+        <div class="goods_img">
+          <span class="overlay_new"></span>
+          <img src="img/content/perforator-3.jpg" alt="Перфоратор BOSCH BFG 6000" class="goods_card_img" width="218" height="170">
         <div class="goods_buttons">
           <a href="#" class="goods_btn_cart">КУПИТЬ</a>
           <a href="#" class="goods_btn_bookmark">В ЗАКЛАДКИ</a>
@@ -304,9 +321,9 @@
 
     <li class="goods_card">
       <div class="goods_card_content">
-      <img src="img/content/new-flag.png" alt="Новинка" class="goods_new_flag" width="60" height="59" hidden>
-      <div class="goods_img">
-      <img src="img/content/perforator-4.jpg" alt="Перфоратор BOSCH BFG 2000" class="goods_card_img" width="218" height="170">
+        <div class="goods_img">
+          <span class="overlay_new"></span>
+          <img src="img/content/perforator-4.jpg" alt="Перфоратор BOSCH BFG 2000" class="goods_card_img" width="218" height="170">
         <div class="goods_buttons">
           <a href="#" class="goods_btn_cart">КУПИТЬ</a>
           <a href="#" class="goods_btn_bookmark">В ЗАКЛАДКИ</a>
