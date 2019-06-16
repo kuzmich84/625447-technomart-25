@@ -1,6 +1,7 @@
 var cart = document.querySelector(".goods_btn_cart");
 var modalCart = document.querySelector(".cart_popup");
 var close = document.querySelector(".cart_popup .popup_close");
+var contBtn = document.querySelector(".continue_btn");
 
 
 
@@ -11,6 +12,11 @@ cart.addEventListener("click", function (evt) {
 });
 
 close.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  modalCart.classList.remove("cart_popup_show");
+});
+
+contBtn.addEventListener("click", function (evt) {
   evt.preventDefault();
   modalCart.classList.remove("cart_popup_show");
 });
