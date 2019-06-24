@@ -1169,7 +1169,7 @@ a svg:hover .login_img{
   font-family: inherit;
   font-size: 36px;
   line-height: 36px;
-  margin: 0 0 28px 0;
+  margin: 0 0 20px 0;
 
 
 }
@@ -1203,6 +1203,13 @@ a svg:hover .login_img{
   right: 0;
   background-image: url(../img/content/credit.png);
   background-repeat: no-repeat;
+
+}
+
+.credit{
+  display: inline-block;
+  padding:10px 45px;
+  margin-top: 30px;
 
 }
 
@@ -1979,13 +1986,26 @@ h3 .goods_title{
 
 }
 .goods_price{
-  background: url("../img/svg/red-button.svg") no-repeat center;
   font-size: 17px;
   line-height: 18px;
-  color: #fff;
-  padding: 13px 40px 13px 36px;
-  margin: 15px 0 15px 0;
+  position: relative;
+  width: 80px;
+  margin: 10px auto 20px;
+  padding: 10px 30px;
+  color: white;
+  background: #ee3643;
+  border-radius: 3px;
+}
 
+.goods_price:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -20px;
+  width: 0;
+  height: 0;
+  border: 19px solid white;
+  border-left-color: #ee3643;
 }
 
 .goods_btn_cart{
