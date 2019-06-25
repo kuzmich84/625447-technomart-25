@@ -14,8 +14,8 @@ close.addEventListener("click", function (evt) {
 });
 
 window.addEventListener("keydown", function (evt) {
-  if(evt.keyCode === 27) {
-    if(modalMap.classList.contains("map_popup_show")){
+  if (evt.keyCode === 27) {
+    if (modalMap.classList.contains("map_popup_show")) {
       evt.preventDefault();
       modalMap.classList.remove("map_popup_show");
     }
