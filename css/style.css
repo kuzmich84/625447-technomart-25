@@ -1803,7 +1803,7 @@ a svg:hover .login_img {
   width: 100%;
   height: 1px;
   background-repeat: repeat;
-  top: 25px;
+  top: 27px;
 }
 
 .sorting_item:active::before {
