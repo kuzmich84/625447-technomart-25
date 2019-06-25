@@ -26,7 +26,6 @@ q{
   quotes: "\00ab" "\00bb";
 }
 
-
 .visuallyhidden:not(:focus):not(:active) {
   position: absolute;
   width: 1px;
@@ -39,10 +38,6 @@ q{
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-nav a{
-  text-transform: capitalize;
 }
 
 .container h3{

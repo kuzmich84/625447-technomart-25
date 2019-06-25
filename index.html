@@ -355,21 +355,21 @@
 <div class="write-us_popup">
   <button  class="popup_close" type="button">Закрыть</button>
   <div class="write-us_popup_form">
-    <form action="#" method="post">
+    <form id="popup_form" action="https://echo.htmlacademy.ru" method="post">
       <div class="write-us_popup_input">
         <label for="name">Ваше имя:</label>
-        <input type="text" placeholder="Имя Фамилия" id="name">
+        <input type="text" placeholder="Имя Фамилия" id="name" name="name">
       </div>
       <div class="write-us_popup_input indent">
         <label for="email">Ваш e-mail:</label>
-        <input type="text" placeholder="email@example.com" id="email">
+        <input type="text" placeholder="email@example.com" id="email" name="email">
       </div>
       <label for="message">Текст письма:</label>
-      <textarea type="textarea" id="message" placeholder="В свободной форме" rows="5"></textarea>
+      <textarea type="textarea" id="message" placeholder="В свободной форме" rows="5" name="text"></textarea>
     </form>
   </div>
   <div class="write-us_popup_btn">
-    <input class="btn" type="submit" value="ОТПРАВИТЬ"/>
+    <input  class="btn" type="submit" value="ОТПРАВИТЬ" form="popup_form"/>
   </div>
 </div>
 
@@ -379,7 +379,21 @@
   <button  class="popup_close" type="button">Закрыть</button>
 </div>
 
+<div class="cart_popup">
+
+  <div class="cart_popup_content">
+    <button class="popup_close" type="button">Закрыть</button>
+    <p>Товар добавлен в корзину!</p>
+    <span class="cart_popup_mark_img"></span>
+  </div>
+  <div class="cart_popup_btn">
+    <a class="checkout_btn btn" href="#">оформить заказ</a>
+    <button class="continue_btn" type="button" value="continue">продолжить покупки</button>
+  </div>
+</div>
+
 <script src="js/write_us_popup.js"></script>
 <script src="js/map_popup.js"></script>
+<script src="js/cart_popup.js"></script>
 </body>
 </html>
