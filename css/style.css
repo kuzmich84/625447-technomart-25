@@ -175,6 +175,7 @@ q {
 .write-us_popup_form label {
   display: inline-block;
   margin-bottom: 13px;
+  vertical-align: top;
 
 }
 
@@ -183,6 +184,7 @@ q {
   width: 220px;
   margin-right: -4px;
   margin-bottom: 19px;
+  vertical-align: top;
 
 }
 
@@ -191,7 +193,7 @@ q {
   padding-bottom: 8px;
   padding-left: 15px;
   border-radius: 5px;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
   width: 220px;
@@ -246,14 +248,14 @@ q {
 }
 
 .write-us_popup_form textarea::-webkit-input-placeholder {
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
   color: #a9a9a9;
 }
 
 .write-us_popup_form textarea::-moz-placeholder, :-moz-placeholder {
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
   color: #a9a9a9;
@@ -587,6 +589,7 @@ q {
   text-transform: inherit;
   display: inline-block;
   margin: 8px 8px 10px 20px;
+  vertical-align: top;
 }
 
 .my_orders:hover, .private_office:hover {
@@ -932,6 +935,7 @@ a svg:hover .login_img {
   width: 135px;
   margin-left: 25px;
   padding: 10px 0;
+  vertical-align: top;
 }
 
 .materials {
@@ -1249,7 +1253,7 @@ a svg:hover .login_img {
   display: inline-block;
   padding: 10px 45px;
   margin-top: 30px;
-
+  vertical-align: top;
 }
 
 .services_control {
