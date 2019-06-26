@@ -1,7 +1,7 @@
 var cart = document.querySelectorAll(".goods_btn_cart");
 var modalCart = document.querySelector(".cart_popup");
 var close = document.querySelector(".cart_popup .popup_close");
-var contBtn = document.querySelector(".continue_btn");
+var contBtn = document.querySelector(".continue_btn");;
 
 
 for (let i = 0; i < cart.length; i++) {
